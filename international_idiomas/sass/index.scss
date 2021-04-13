@@ -1,0 +1,102 @@
+@import 'config';
+@import 'utilities';
+
+.banner {
+    width: 90%;
+    text-align: center;
+
+    h1 {
+        font-family: 'Poppins Bold';
+        line-height: 35pt;
+    }
+
+    button {
+        padding: 20px 50px 20px 50px;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: $color-one;
+        font-family: 'Poppins Regular';
+        font-size: 12pt;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all .3s;
+        margin-top: 20px;
+    }
+
+    button:hover {
+        background-color: $color-two;
+    }
+}
+
+.banner-img {
+    display: none;
+}
+
+.about-img {
+    display: none;
+}
+
+.about {
+    text-align: center;
+    width: 90%;
+
+    h2 {
+        line-height: 30pt;
+    }
+}
+
+.benefits {
+    width: 90%;
+    text-align: center;
+
+    h2 {
+        line-height: 25pt;
+    }
+
+    .in-benefits {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .benefit {
+            width: 100%;
+            margin: 20px 0px 20px 0px;
+        }
+    }
+}
+
+.customers {
+    width: 90%;
+    text-align: center;
+
+    h2 {
+        line-height: 25pt;
+    }
+
+    .in-customers {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .customer {
+            width: 100%;
+            margin: 20px 0px 20px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .customer-photo {
+                width: 100px;
+                height: 100px;
+                border: 5px solid lightgray;
+                border-radius: 100%;
+                background-image: url(../img/customer3.jfif);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}

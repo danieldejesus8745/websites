@@ -1,0 +1,39 @@
+$color-one: #7444fd;
+$color-two: #6435e7;
+$color-three: #051441;
+
+@font-face {
+    font-family: 'Poppins Light';
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 15pt 'Poppins Light', sans-serif;
+    color: $color-three;
+}
+
+a {
+    text-decoration: none;
+    color: $color-one;
+}
+
+a:hover {
+    color: $color-two;
+    text-decoration: underline;
+}

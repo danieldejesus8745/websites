@@ -1,0 +1,305 @@
+@font-face {
+  font-family: 'Poppins Light';
+  src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins Regular';
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins Bold';
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 15pt 'Poppins Light', sans-serif;
+  color: #051441;
+}
+
+a {
+  text-decoration: none;
+  color: #7444fd;
+}
+
+a:hover {
+  color: #6435e7;
+  text-decoration: underline;
+}
+
+.header {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+.header .in-header {
+  width: 1280px;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .in-header .logo-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+}
+
+.header .in-header .logo {
+  padding-left: 20px;
+  font-size: 20pt;
+  font-family: 'Poppins Regular';
+  cursor: pointer;
+}
+
+.header .in-header .logo span {
+  color: #7444fd;
+}
+
+.header .in-header .btn-menu {
+  width: 75px;
+  height: 75px;
+}
+
+.header .in-header .btn-menu span {
+  font-size: 35pt;
+  color: #051441;
+  cursor: pointer;
+}
+
+.header .in-header .menu {
+  display: none;
+}
+
+.header .in-header .menu-mobile {
+  width: 0%;
+  height: 100%;
+  background-color: #7444fd;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: all .3s;
+}
+
+.header .in-header .menu-mobile .header {
+  background-color: #7444fd;
+}
+
+.header .in-header .menu-mobile .header span {
+  color: white;
+}
+
+.header .in-header .menu-mobile nav {
+  margin-top: 75px;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+}
+
+.header .in-header .menu-mobile nav ul {
+  list-style: none;
+}
+
+.header .in-header .menu-mobile nav ul li {
+  padding: 10px 0px 10px 0px;
+  font-size: 20pt;
+  margin: 10px 0px 10px 0px;
+  color: white;
+}
+
+.header .in-header .menu-mobile nav ul .active {
+  color: #051441;
+}
+
+.main {
+  width: 100%;
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+}
+
+.main .in-main {
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .in-main .in-main-div {
+  width: 90%;
+  margin: 15px 0px 15px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #051441;
+  color: white;
+}
+
+.footer .in-footer {
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .in-footer .in-footer-div {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px 15px 0px;
+}
+
+.footer .in-footer .in-footer-div .footer-menu {
+  text-align: center;
+  width: 90%;
+}
+
+.footer .in-footer .in-footer-div .footer-menu ul {
+  list-style: none;
+}
+
+.footer .in-footer .in-footer-div .footer-menu ul li {
+  margin: 5px 0px 5px 0px;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+}
+
+.footer .in-footer .in-footer-div .social-networks {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .in-footer .in-footer-div .social-networks .social-network {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #7444fd;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .3s;
+  position: relative;
+  top: 0;
+}
+
+.footer .in-footer .in-footer-div .social-networks .social-network:hover {
+  background-color: #7444fd;
+  position: relative;
+  top: -5px;
+}
+
+.footer .in-footer .in-footer-div .copyright {
+  width: 90%;
+  text-align: center;
+  font-size: 12pt;
+}
+
+.footer .in-footer .in-footer-div .copyright span {
+  font-size: 25pt;
+  color: red;
+}
+
+@media (min-width: 700px) {
+  .header .in-header .btn-menu {
+    display: none;
+  }
+  .header .in-header .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+  }
+  .header .in-header .menu nav {
+    padding: 0px 10px 0px 10px;
+  }
+  .header .in-header .menu nav ul {
+    list-style: none;
+    display: flex;
+  }
+  .header .in-header .menu nav ul li {
+    padding: 0px 10px 0px 10px;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  .header .in-header .menu nav ul li:hover {
+    color: #7444fd;
+  }
+  .header .in-header .menu nav ul .active-wide {
+    color: #7444fd;
+  }
+  .main .in-main .in-main-div {
+    align-items: center;
+  }
+  .main .in-main .in-main-div .banner {
+    text-align: left;
+    width: 50%;
+  }
+  .main .in-main .in-main-div .banner-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .main .in-main .in-main-div .banner-img img {
+    width: 100%;
+  }
+  .main .in-main .in-main-div .about-img {
+    display: flex;
+    width: 50%;
+  }
+  .main .in-main .in-main-div .about-img img {
+    width: 100%;
+  }
+  .main .in-main .in-main-div .about {
+    width: 50%;
+    text-align: right;
+  }
+  .main .in-main .in-main-div .about p {
+    width: 90%;
+    float: right;
+  }
+  .main .in-main .in-main-div .benefits .in-benefits .benefit {
+    width: 50%;
+    padding: 10px;
+  }
+  .main .in-main .in-main-div .customers .in-customers .customer {
+    width: 50%;
+    padding: 10px;
+  }
+  .footer .in-footer .in-footer-div .footer-menu ul {
+    display: flex;
+    justify-content: center;
+  }
+  .footer .in-footer .in-footer-div .footer-menu ul li {
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  .footer .in-footer .in-footer-div .footer-menu ul li:hover {
+    color: #7444fd;
+  }
+  .footer .in-footer .in-footer-div .social-networks {
+    width: 20%;
+  }
+}
+/*# sourceMappingURL=index.min.css.map */
